@@ -30,6 +30,9 @@ namespace derveninov01_kursovaya_prog3
             this.question = question;
 
             tbTitle.Text = question.Title;
+
+            if (question.questionType == QuestionType.FreeAnswer) rbFreeAnswer.Checked = true;
+            else rbSingleAnswer.Checked = true;
             // Очистить панель вариантов ответа
             VariantsPannel.Controls.Clear();
             // Создание вариантов ответа для каждого вопроса
