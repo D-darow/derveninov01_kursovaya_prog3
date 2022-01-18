@@ -35,7 +35,7 @@ namespace derveninov01_kursovaya_prog3
             if (passed) // Если вопрос отвечен
             {
                 var lb = new Label();
-                lb.Text = answer.AnswerText;
+                lb.Text = "Ваш ответ: " + answer.AnswerText;
                 lb.Parent = pnMain;
             }
             else
