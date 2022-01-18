@@ -87,7 +87,7 @@ namespace derveninov01_kursovaya_prog3
             }
             foreach (Question question in questionnaire)
             {
-                if (question.Count == 0) 
+                if (question.Count == 0 && question.questionType == QuestionType.SingleAnswer) 
                 {
                     throw new Exception("Не во всех вопросах есть варианты ответа...");
                 }
