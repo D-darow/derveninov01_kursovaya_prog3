@@ -34,7 +34,7 @@ namespace derveninov01_kursovaya_prog3
             return variant;
         }
         /// <summary>
-        /// Передвинуть вариант ответа
+        /// Переместить вариант ответа в списке
         /// </summary>
         public void MoveVariant(Question question, Variant variant, int where)
         {
